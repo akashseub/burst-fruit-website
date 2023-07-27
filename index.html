@@ -44,7 +44,7 @@
 <body>
     <header>
         <nav class="my-12 container mx-auto">
-            <div class="navbar bg-color-common-web rounded-3xl text-white p-8 relative">
+            <div class="navbar lg:bg-color-common-web rounded-3xl lg:text-white p-8 relative">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -53,10 +53,14 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="navbar-center">
-                    <div class="dropdown">
+                <div class="lg:navbar-center sm:justify-between">
+                    <div class="flex btn btn-ghost normal-case align-center">
+                        <img class="w-[40px]" src="images/logo.png" alt="">
+                        <a class=" text-4xl">Fruit Burst</a>
+                    </div>
+                    <div class="dropdown ml-24">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
@@ -70,12 +74,8 @@
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    <div class="flex btn btn-ghost normal-case align-center">
-                        <img class="w-[40px]" src="images/logo.png" alt="">
-                        <a class=" text-4xl">Fruit Burst</a>
-                    </div>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end hidden lg:flex">
                     <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-80 text-black" />
                     <i class="fa-solid fa-magnifying-glass text-black absolute right-12 cursor-pointer"></i>
                 </div>
